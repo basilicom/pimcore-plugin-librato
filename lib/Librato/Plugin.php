@@ -209,6 +209,8 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
         $client = new Client($email, $token);
         $client->setSource($source);
+
+        return $client;
     }
 
     /**
