@@ -32,13 +32,13 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
     {
         parent::init();
 
-        \Pimcore::getEventManager()->attach("system.maintenance", array($this, 'maintenance'));
+        \Pimcore::getEventManager()->attach("system.maintenance", array($this, 'performMaintenance'));
     }
 
     /**
      * Gathers metrics and sends them off to librato
      */
-    public function maintenance()
+    public function performMaintenance()
     {
 
         if (!file_exists(self::getConfigName())) {
