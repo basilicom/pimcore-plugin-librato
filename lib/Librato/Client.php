@@ -98,6 +98,12 @@ class Client {
         if ($this->user == '') return;
         if ($this->token == '') return;
 
+        if ((count($this->metrics['gauges']) == 0)
+            && (count($this->metrics['counters']) == 0)
+        ) {
+            return;
+        }
+
         $ch = curl_init($this->libratoApiUrl);
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
