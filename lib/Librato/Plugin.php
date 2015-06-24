@@ -194,8 +194,7 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
         $config = new \Zend_Config_Xml(self::getConfigName());
 
-        self::$isEnabled = ($config->librato->get('enabled', '0') == '1');
-        if (!self::$isEnabled) {
+        if (!($config->librato->get('enabled', '0') == '1')) {
             return new Client(); // return dummy client
         }
 
