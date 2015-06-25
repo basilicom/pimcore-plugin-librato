@@ -1,6 +1,12 @@
 Librato Pimcore Plugin
 ================================================
 
+[![Codacy Badge](https://www.codacy.com/project/badge/40951ff3e29e481381b9b4826cafcf89)](https://www.codacy.com/app/basilicom/pimcore-plugin-librato)
+[![Dependency Status](https://www.versioneye.com/php/basilicom-pimcore-plugin:librato/1.0.0/badge.svg)](https://www.versioneye.com/php/basilicom-pimcore-plugin:librato/1.0.0)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/basilicom/pimcore-plugin-librato/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/basilicom/pimcore-plugin-librato/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/basilicom/pimcore-plugin-librato/badges/build.png?b=master)](https://scrutinizer-ci.com/g/basilicom/pimcore-plugin-librato/build-status/master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/51ed30d0-409a-49e2-9338-e6a63901162e/mini.png)](https://insight.sensiolabs.com/projects/51ed30d0-409a-49e2-9338-e6a63901162e)
+
 Developer info: [Pimcore at basilicom](http://basilicom.de/en/pimcore)
 
 ## Synopsis
