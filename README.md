@@ -39,7 +39,7 @@ Example:
 
     {
         "require": {
-            "basilicom-pimcore-plugin/librato": ">=1.0.0"
+            "basilicom-pimcore-plugin/librato": "~1.0"
         }
     }
     
@@ -61,7 +61,7 @@ Define some metrics. These examples cover all the possiblities:
     </metrics>
     
 Please note: The SQL queries and php static methods must return exactly one numerical value suitable
-for Librato API consumption. Types "addCounter" and "addGauge" are supported.
+for Librato API consumption. Types "counter" and "gauge" are supported.
 
 Change the "enabled" property to "1" to enable sending of values.
 
@@ -71,8 +71,8 @@ If you want to send metrics to librato not on the maintenance run, but manually 
 following methods:
 
 * &\Librato\Plugin::getClient() returns a \Librato\Client configured and ready for sending metrics. Returns a dummy client if plugin is not configured/enabled.
-* \Librato\Client->addGauge(string $name, int|float $value) - adds a addGauge metric
-* \Librato\Client->addCounter(string $name, int|float $value)  - adds a addCounter metric
+* \Librato\Client->addGauge(string $name, int|float $value) - adds a gauge metric
+* \Librato\Client->addCounter(string $name, int|float $value)  - adds a counter metric
 * \Librato\Client->flush() - sends metrics buffer to Librato
 
 ## Tests
